@@ -1,0 +1,46 @@
+<h2 [align]="alignc"> Calculator </h2>
+
+
+<div class="div" [align]="alignc">
+    <table>
+        <tr>
+            <td  colspan="4"><input type="text" [(ngModel)]="txt"></td>
+        </tr>
+
+        <tr>
+            <td><button (click)= "operation('%')"> % </button></td>
+            <td><button (click)="clear(click)"> CE </button></td>
+            <td><button (click)="clearall(click)"> C </button></td>
+            <td><button (click)="backs(click)"> <- </button></td>
+        </tr>
+
+        <tr>
+            <td><button (click)="set('7')"> 7 </button></td>
+            <td><button (click)="set('8')"> 8 </button></td>
+            <td><button (click)="set('9')"> 9 </button></td>
+            <td><button (click)="operation('/')"> / </button></td>
+        </tr>
+
+        <tr>
+            <td><button (click)="set('4')"> 4 </button></td>
+            <td><button (click)="set('5')"> 5 </button></td>
+            <td><button (click)="set('6')"> 6 </button></td>
+            <td><button (click)="operation('*')"> * </button></td>
+        </tr>
+
+        <tr>
+            <td><button (click)="set('1')"> 1 </button></td>
+            <td><button (click)="set('2')"> 2 </button></td>
+            <td><button (click)="set('3')"> 3 </button></td>
+            <td><button (click)="operation('-')"> - </button></td>
+        </tr>
+
+        <tr>
+            <td><button (click)="set('0')"> 0 </button></td>
+            <td><button (click)="set('.')"> . </button></td>
+            <td><button (click)="solution(click)"> = </button></td>
+            <td><button (click)="operation('+')"> + </button></td>
+        </tr>
+
+    </table>
+</div>
